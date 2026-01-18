@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
 import { X, MessageSquare, Send } from 'lucide-react';
-import { ContactFormState } from '../types';
 
-const ContactSidebar: React.FC = () => {
+const ContactSidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [formData, setFormData] = useState<ContactFormState>({
+  const [formData, setFormData] = useState({
     name: '',
     email: '',
     website: '',
     goal: 'seo'
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     // Simulate form submission
     alert('Thanks! Your free audit request has been sent to our team.');
