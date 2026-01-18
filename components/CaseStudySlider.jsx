@@ -1,8 +1,7 @@
 import React, { useRef } from 'react';
 import { ArrowLeft, ArrowRight, TrendingUp } from 'lucide-react';
-import { CaseStudy } from '../types';
 
-const caseStudies: CaseStudy[] = [
+const caseStudies = [
   {
     id: 'cs1',
     client: 'TechNova SaaS',
@@ -45,10 +44,10 @@ const caseStudies: CaseStudy[] = [
   }
 ];
 
-const CaseStudySlider: React.FC = () => {
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+const CaseStudySlider = () => {
+  const scrollContainerRef = useRef(null);
 
-  const scroll = (direction: 'left' | 'right') => {
+  const scroll = (direction) => {
     if (scrollContainerRef.current) {
       const scrollAmount = 400; // width of card + gap
       scrollContainerRef.current.scrollBy({
