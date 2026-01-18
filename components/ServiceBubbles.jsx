@@ -1,8 +1,7 @@
 import React from 'react';
 import { Search, MousePointer2, Share2, Mail, BarChart2, Globe } from 'lucide-react';
-import { Service } from '../types';
 
-const services: Service[] = [
+const services = [
   {
     id: 'seo',
     title: 'Organic SEO',
@@ -47,7 +46,7 @@ const services: Service[] = [
   }
 ];
 
-const ServiceBubbles: React.FC = () => {
+const ServiceBubbles = () => {
   return (
     <section className="py-24 bg-slate-900 relative overflow-hidden">
         {/* Decorative line */}
