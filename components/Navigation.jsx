@@ -1,7 +1,7 @@
 import React from 'react';
 import { Rocket } from 'lucide-react';
 
-const Navigation: React.FC = () => {
+const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-30 bg-brand-dark/80 backdrop-blur-lg border-b border-white/5">
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
