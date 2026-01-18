@@ -5,7 +5,7 @@ import ServiceBubbles from './components/ServiceBubbles';
 import CaseStudySlider from './components/CaseStudySlider';
 import ContactSidebar from './components/ContactSidebar';
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <div className="min-h-screen bg-brand-dark text-slate-200 font-sans selection:bg-brand-hot selection:text-white">
       <Navigation />
