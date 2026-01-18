@@ -3,7 +3,7 @@ import { ArrowRight, Zap } from 'lucide-react';
 
 const WORDS = ["REVENUE", "TRAFFIC", "GROWTH", "SALES"];
 
-const MarketingHero: React.FC = () => {
+const MarketingHero = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
   useEffect(() => {
